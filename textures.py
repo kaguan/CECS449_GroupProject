@@ -6,7 +6,7 @@ class Texture:
     def __init__(self, ctx):
         self.ctx = ctx
         self.textures = {}
-        self.textures['skybox'] = self.get_texture_cube(dir_path='textures', ext='jpg')
+        self.textures['skybox'] = self.get_texture_cube(dir_path='textures/', ext='jpg')
 
     def get_texture_cube(self, dir_path, ext='jpg'):
         faces = ['right', 'left', 'up', 'down'] + ['front', 'back'][::-1]
